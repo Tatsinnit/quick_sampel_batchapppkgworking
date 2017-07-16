@@ -1,21 +1,23 @@
 # quick_sampel_batchapppkgworking
-Sample barebone app to show batch application working end to end
-
+Sample barebone app to show batch application working end to end for a quick SO post.
 
 Readme: barebone quick app:
 
 Please note thta this app is nothing but a quick sample made based on the existing sample for DotNetTutorial.
 
 Following code is generated just as a sample code for end to end app package working feature.
+
 •	https://docs.microsoft.com/en-us/azure/batch/
+
 •	https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview
 
 App Pacakges:
 
 •	https://docs.microsoft.com/en-us/azure/batch/batch-application-packages
+
 •	https://azure.microsoft.com/en-us/blog/application-packages-and-task-dependencies-now-available-on-azure-batch/
 
-The overview as how it works is fairly simple, when user uploads to adds an application package the package becomes available within node’s working directory. The env var gets created to handle multiple updated versions of the app: 
+The overview as how it works is fairly simple, when user uploads to adds an application package the package becomes available within node’s working directory (wd). The env var gets created to handle multiple updated versions of the app: (the timestamp is automatically part of the App pkg populated env var you dont need to do anything to handle this.)
 
 ```
 set AZ_BATCH_APP_PACKAGE_TEST1#1.0=C:\user\tasks\applications\wd\test1\1.0\2017-07-14T21.45.45.765Z
@@ -28,6 +30,7 @@ string taskCommandLine = String.Format("cmd /c %AZ_BATCH_APP_PACKAGE_TEST1#1.0%\
 ```
 
 The inside implementation is fairly neat as well.
+
 Please note the reason: 
 
 ```
