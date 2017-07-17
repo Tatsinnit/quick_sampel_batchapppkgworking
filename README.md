@@ -1,4 +1,4 @@
-# quick_sampel_batchapppkgworking
+# quick_sample_batchapppkgworking
 Sample barebone app to show batch application working end to end for a quick SO post.
 
 Readme: barebone quick app:
